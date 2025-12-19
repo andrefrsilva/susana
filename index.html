@@ -3,12 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Susana Rosa | Luxury Real Estate</title>
-    <meta name="description" content="Susana Rosa - Consultora Remax Collection. Imobiliário de Luxo em Lisboa.">
+    <meta name="description" content="Susana Rosa - Consultora de Elite Remax Collection. Especialista em Imobiliário de Luxo em Lisboa. Resultados comprovados e serviço premium.">
+    <meta name="author" content="Susana Rosa">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231c1917%22/><text x=%2250%22 y=%2270%22 font-family=%22serif%22 font-size=%2270%22 fill=%22white%22 text-anchor=%22middle%22>S</text></svg>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://susana-rosa-remax.github.io/"> 
+    <meta property="og:title" content="Susana Rosa | Luxury Real Estate">
+    <meta property="og:description" content="Consultora Premiada Remax Collection. Beyond Real Estate. Art of Living.">
+    <meta property="og:image" content="https://i.postimg.cc/DwZmPksv/image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Susana Rosa | Luxury Real Estate">
+    <meta name="twitter:description" content="Consultora Premiada Remax Collection. Investimento e Lifestyle em Lisboa.">
+    <meta name="twitter:image" content="https://i.postimg.cc/DwZmPksv/image.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -32,9 +49,6 @@
                             900: '#1c1917',
                             950: '#0c0a09',
                         }
-                    },
-                    spacing: {
-                        '128': '32rem',
                     }
                 }
             }
@@ -42,67 +56,32 @@
     </script>
 
     <style>
-        body {
-            background-color: #f5f5f4; /* stone-100 */
-            color: #1c1917; /* stone-900 */
-        }
+        body { background-color: #f5f5f4; color: #1c1917; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f5f5f4; }
+        ::-webkit-scrollbar-thumb { background: #a8a29e; border-radius: 4px; }
         
-        /* Hide scrollbar for cleaner look */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f5f5f4; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #d6d3d1; 
-        }
-
-        /* Typography Utilities */
-        .text-huge {
-            font-size: clamp(3rem, 8vw, 9rem);
-            line-height: 0.9;
-        }
+        .text-huge { font-size: clamp(3rem, 8vw, 9rem); line-height: 0.9; }
+        .img-reveal-wrapper { overflow: hidden; }
         
-        /* Utility for image reveal animation */
-        .img-reveal-wrapper {
-            overflow: hidden;
-        }
-        .img-reveal {
-            transform: scale(1.2);
-            will-change: transform;
-        }
-
-        /* Lenis Smooth Scroll Setup */
-        html.lenis {
-            height: auto;
-        }
-        .lenis.lenis-smooth {
-            scroll-behavior: auto;
-        }
-        .lenis.lenis-smooth [data-lenis-prevent] {
-            overscroll-behavior: contain;
-        }
-        .lenis.lenis-stopped {
-            overflow: hidden;
-        }
-        .lenis.lenis-scrolling iframe {
-            pointer-events: none;
-        }
+        /* Lenis Setup */
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto; }
+        .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+        .lenis.lenis-stopped { overflow: hidden; }
     </style>
 </head>
 <body>
 
     <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-start p-6 mix-blend-difference text-white pointer-events-none">
-        <div class="pointer-events-auto opacity-0 reveal-nav">
-            <a href="#" class="block leading-none uppercase tracking-tighter">
+        <div class="pointer-events-auto opacity-0 reveal-nav cursor-pointer" onclick="window.scrollTo(0,0)">
+            <div class="leading-none uppercase tracking-tighter">
                 <span class="font-bold text-lg">Susana Rosa</span><br>
                 <span class="text-xs font-light opacity-80">Remax Collection</span>
-            </a>
+            </div>
         </div>
-        
         <div class="pointer-events-auto opacity-0 reveal-nav">
-            <a href="https://wa.me/351913603001" target="_blank" class="group flex items-center gap-2 bg-stone-100 text-stone-900 px-5 py-2 rounded-full hover:bg-white transition-transform hover:scale-105 duration-300">
+            <a href="https://wa.me/351913603001" target="_blank" class="group flex items-center gap-2 bg-stone-100 text-stone-900 px-5 py-2 rounded-full hover:bg-white transition-transform hover:scale-105 duration-300 shadow-lg">
                 <span class="text-xs font-bold uppercase tracking-widest">WhatsApp</span>
                 <i data-lucide="message-circle" class="w-4 h-4"></i>
             </a>
@@ -110,17 +89,17 @@
     </nav>
 
     <header class="relative w-full h-screen overflow-hidden flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-12">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-black/30 z-10"></div> <img src="https://i.postimg.cc/DwZmPksv/image.png" alt="Luxury Real Estate Hero" class="w-full h-full object-cover parallax-img">
+        <div class="absolute inset-0 z-0 bg-stone-900">
+            <div class="absolute inset-0 bg-black/20 z-10"></div>
+            <img src="https://i.postimg.cc/DwZmPksv/image.png" alt="Luxury Real Estate Hero" class="w-full h-full object-cover parallax-img opacity-90">
         </div>
 
         <div class="relative z-20 w-full max-w-[1800px] mx-auto text-white">
             <div class="overflow-hidden mb-4">
-                <p class="hero-text-anim text-sm md:text-base font-medium tracking-[0.3em] uppercase pl-1 border-l-2 border-white/50">
+                <p class="hero-text-anim text-xs md:text-sm font-medium tracking-[0.3em] uppercase pl-1 border-l-2 border-white/50">
                     Lisbon Luxury Real Estate
                 </p>
             </div>
-            
             <h1 class="font-bold text-huge uppercase tracking-tighter text-white">
                 <div class="overflow-hidden"><span class="hero-text-anim block">Beyond</span></div>
                 <div class="overflow-hidden"><span class="hero-text-anim block">Real Estate.</span></div>
@@ -131,78 +110,73 @@
 
     <section class="py-24 md:py-40 px-6 md:px-12 bg-stone-100 relative z-20">
         <div class="max-w-[1600px] mx-auto">
-            
             <div class="mb-16 border-b border-stone-300 pb-8 flex flex-col md:flex-row justify-between items-end fade-in">
                 <div>
                     <h2 class="text-4xl md:text-6xl font-light tracking-tighter uppercase text-stone-900">The Profile</h2>
                     <p class="mt-2 text-stone-500 text-xs uppercase tracking-widest">Licença INCI Nº 2778</p>
                 </div>
-                <div class="mt-4 md:mt-0">
-                    <p class="text-stone-900 font-bold uppercase tracking-wide text-sm">Prémio Hall of Fame</p>
+                <div class="mt-4 md:mt-0 flex items-center gap-2">
+                    <i data-lucide="award" class="text-yellow-600 w-5 h-5"></i>
+                    <p class="text-stone-900 font-bold uppercase tracking-wide text-sm">Hall of Fame Member</p>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[minmax(280px,auto)]">
-                
-                <div class="md:col-span-2 row-span-2 bg-stone-900 text-stone-50 p-8 md:p-12 flex flex-col justify-between group hover:bg-black transition-colors duration-500 bento-item">
+                <div class="md:col-span-2 row-span-2 bg-stone-900 text-stone-50 p-8 md:p-12 flex flex-col justify-between group bento-item">
                     <div>
                         <h3 class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-6">Sobre Mim</h3>
                         <p class="text-xl md:text-2xl leading-relaxed font-light text-stone-200">
-                            Licenciada em Gestão de Empresas, pós-graduação em Marketing e especialização em <span class="text-white font-serif italic">Luxury Real Estate Sales Management</span> (ISEG).
-                        </p>
-                        <p class="mt-6 text-stone-400 font-light leading-relaxed text-sm md:text-base">
-                            Conhecimentos técnicos de Decoração de Interiores e Consultoria de Imagem. Na Remax apostei sempre na formação contínua, certificada como Consultora Remax Collection há vários anos.
+                            Licenciada em Gestão com especialização em <span class="text-white font-serif italic">Luxury Real Estate Sales Management</span>.
+                            A minha abordagem combina rigor técnico com estética em Decoração de Interiores.
                         </p>
                     </div>
-                    <div class="mt-8 pt-8 border-t border-stone-800 flex justify-between items-center">
-                        <span class="text-xs uppercase tracking-widest text-stone-500">Desde 2006</span>
-                        <i data-lucide="award" class="text-stone-400"></i>
+                    <div class="mt-8 pt-8 border-t border-stone-800 flex justify-between items-center opacity-70">
+                        <span class="text-xs uppercase tracking-widest">Consultora desde 2006</span>
+                        <span class="text-xs uppercase tracking-widest">Remax Collection</span>
                     </div>
                 </div>
 
                 <div class="md:col-span-1 row-span-2 relative overflow-hidden bg-stone-200 min-h-[400px] bento-item group">
-                    <img src="https://i.postimg.cc/kXPxs4Xn/image.png" alt="Susana Rosa" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/60 to-transparent">
+                    <img src="https://i.postimg.cc/kXPxs4Xn/image.png" alt="Susana Rosa" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
                         <p class="text-white text-xs font-bold uppercase tracking-widest">Agente Premiada</p>
                     </div>
                 </div>
 
                 <div class="md:col-span-1 row-span-2 bg-white border border-stone-200 p-8 flex flex-col bento-item hover:border-stone-400 transition-colors duration-300">
                     <h3 class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-6">Reconhecimento</h3>
-                    <ul class="space-y-4 text-xs font-bold uppercase tracking-wide text-stone-800 flex-1 overflow-y-auto custom-scrollbar">
+                    <ul class="space-y-4 text-xs font-bold uppercase tracking-wide text-stone-800">
                         <li class="flex items-center gap-2 pb-2 border-b border-stone-100"><i data-lucide="star" class="w-3 h-3 text-yellow-600"></i> Hall of Fame</li>
                         <li class="flex items-center gap-2 pb-2 border-b border-stone-100"><i data-lucide="star" class="w-3 h-3 text-yellow-600"></i> Balão de Ouro</li>
                         <li class="flex items-center gap-2 pb-2 border-b border-stone-100"><i data-lucide="star" class="w-3 h-3 text-yellow-600"></i> Golden Club</li>
-                        <li class="flex items-center gap-2 pb-2 border-b border-stone-100"><i data-lucide="award" class="w-3 h-3 text-stone-400"></i> Prémio 100%</li>
-                        <li class="flex items-center gap-2 pb-2 border-b border-stone-100"><i data-lucide="award" class="w-3 h-3 text-stone-400"></i> Prémio Executivo</li>
-                        <li class="flex items-center gap-2 pb-2 border-b border-stone-100"><i data-lucide="award" class="w-3 h-3 text-stone-400"></i> Prémio Presidente</li>
+                        <li class="flex items-center gap-2 pb-2 border-b border-stone-100"><i data-lucide="trophy" class="w-3 h-3 text-stone-400"></i> Prémio 100%</li>
+                        <li class="flex items-center gap-2 pb-2 border-b border-stone-100"><i data-lucide="trophy" class="w-3 h-3 text-stone-400"></i> Executivo</li>
                     </ul>
                 </div>
 
                 <div class="md:col-span-2 bg-white border border-stone-200 p-8 bento-item">
-                    <h3 class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-4">Formação & Expertise</h3>
-                    <div class="grid grid-cols-2 gap-4 text-xs leading-relaxed text-stone-600">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-stone-400 mb-4">Expertise</h3>
+                    <div class="grid grid-cols-2 gap-8 text-xs leading-relaxed text-stone-600">
                         <div>
-                            <p class="font-bold text-stone-900 mb-1">Estratégia</p>
-                            Sales Training, Avaliação I e II, Estratégias de Sucesso, Mercado de Luxo.
+                            <p class="font-bold text-stone-900 mb-2 uppercase">Estratégia</p>
+                            Avaliação Imobiliária, Mercado de Luxo, Estratégias de Sucesso, Qualificação de Compradores.
                         </div>
                         <div>
-                            <p class="font-bold text-stone-900 mb-1">Marketing</p>
-                            Home Staging, Fotografia, Facebook/Instagram para Imobiliário, PNL e Neuroleadership.
+                            <p class="font-bold text-stone-900 mb-2 uppercase">Marketing</p>
+                            Home Staging, Fotografia Profissional, Marketing Digital, Neuroleadership.
                         </div>
                     </div>
                 </div>
 
-                <a href="https://wa.me/351913603001" target="_blank" class="md:col-span-2 bg-stone-200 border border-stone-300 p-8 flex items-center justify-between cursor-pointer group bento-item hover:bg-stone-300 transition-colors">
+                <a href="mailto:susana.rosa@remax.pt" class="md:col-span-2 bg-stone-200 border border-stone-300 p-8 flex items-center justify-between cursor-pointer group bento-item hover:bg-stone-300 transition-colors">
                     <div>
-                        <h3 class="text-3xl font-bold uppercase tracking-tighter text-stone-900">Contactar Agora</h3>
-                        <p class="text-xs uppercase tracking-widest text-stone-600 mt-1">Para comprar ou vender</p>
+                        <h3 class="text-3xl font-bold uppercase tracking-tighter text-stone-900">Vender Imóvel?</h3>
+                        <p class="text-xs uppercase tracking-widest text-stone-600 mt-1">Solicite uma avaliação gratuita</p>
                     </div>
                     <div class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white group-hover:rotate-45 transition-transform duration-300">
-                        <i data-lucide="arrow-right"></i>
+                        <i data-lucide="arrow-up-right"></i>
                     </div>
                 </a>
-
             </div>
         </div>
     </section>
@@ -214,11 +188,10 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:h-[80vh]">
-                
                 <div class="md:col-span-8 h-[50vh] md:h-full relative overflow-hidden group img-reveal-wrapper">
                     <img src="https://i.postimg.cc/sD8Cqtq7/image.png" alt="Luxury Landscape" class="w-full h-full object-cover img-reveal">
-                    <div class="absolute top-0 right-0 p-6 bg-white/90 backdrop-blur-md">
-                        <p class="text-xs font-bold uppercase tracking-widest text-black">Lisbon Prime Area</p>
+                    <div class="absolute top-6 right-6 bg-white px-4 py-2 uppercase text-xs font-bold tracking-widest shadow-sm">
+                        Lisbon Prime
                     </div>
                 </div>
 
@@ -226,11 +199,14 @@
                     <div class="h-1/2 relative overflow-hidden img-reveal-wrapper">
                         <img src="https://i.postimg.cc/rsm7YJ9Q/image.png" alt="Detail" class="w-full h-full object-cover img-reveal">
                     </div>
-                    <div class="h-1/2 bg-stone-900 flex flex-col items-center justify-center text-center p-6 text-white fade-in">
-                        <i data-lucide="trending-up" class="w-8 h-8 mb-4 text-stone-500"></i>
-                        <h3 class="text-5xl font-serif italic mb-2">7</h3>
-                        <p class="text-xs font-bold uppercase tracking-widest text-stone-400">Imóveis Disponíveis<br>para Comprar</p>
-                        <a href="#" class="mt-6 border-b border-white pb-1 text-xs uppercase hover:text-stone-300 transition-colors">Ver Listing</a>
+                    <div class="h-1/2 bg-stone-900 flex flex-col items-center justify-center text-center p-6 text-white fade-in relative group cursor-pointer overflow-hidden">
+                        <div class="relative z-10">
+                            <i data-lucide="trending-up" class="w-8 h-8 mb-4 text-stone-500 mx-auto"></i>
+                            <h3 class="text-6xl font-serif italic mb-2">7</h3>
+                            <p class="text-xs font-bold uppercase tracking-widest text-stone-400">Imóveis Disponíveis</p>
+                            <span class="inline-block mt-6 border-b border-white pb-1 text-xs uppercase hover:text-stone-300 transition-colors">Ver Portfolio</span>
+                        </div>
+                        <div class="absolute inset-0 bg-stone-800 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
                     </div>
                 </div>
             </div>
@@ -247,37 +223,35 @@
                 <div class="space-y-12 fade-in">
                     <div>
                         <h4 class="text-xs font-bold uppercase tracking-widest text-stone-500 mb-4">Contacto Direto</h4>
-                        <p class="text-2xl font-light hover:text-white transition-colors cursor-pointer">+351 913 603 001</p>
-                        <p class="text-2xl font-light hover:text-white transition-colors cursor-pointer text-stone-400">susana.rosa@remax.pt</p>
+                        <a href="tel:+351913603001" class="block text-2xl font-light hover:text-white transition-colors">+351 913 603 001</a>
+                        <a href="mailto:susana.rosa@remax.pt" class="block text-xl font-light text-stone-400 mt-2 hover:text-white transition-colors">susana.rosa@remax.pt</a>
                     </div>
-                    
                     <div>
                         <h4 class="text-xs font-bold uppercase tracking-widest text-stone-500 mb-4">Escritório</h4>
                         <p class="text-lg text-stone-300">Rua Dom Pedro V, 37<br>Lisbon, Portugal</p>
                     </div>
-
                     <div>
                         <h4 class="text-xs font-bold uppercase tracking-widest text-stone-500 mb-4">Social</h4>
                         <div class="flex gap-6">
-                            <a href="https://www.linkedin.com/in/susana-rosa/" target="_blank" class="hover:text-white transition-colors"><i data-lucide="linkedin"></i></a>
-                            <a href="https://www.instagram.com/explore/locations/224769254229552/susana-rosa-remax-valor/" target="_blank" class="hover:text-white transition-colors"><i data-lucide="instagram"></i></a>
-                            <a href="https://www.facebook.com/p/Susana-Rosa-Remax-Valor-100063651276092" target="_blank" class="hover:text-white transition-colors"><i data-lucide="facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/susana-rosa/" target="_blank" class="hover:text-white transition-colors transform hover:scale-110"><i data-lucide="linkedin"></i></a>
+                            <a href="https://www.instagram.com/explore/locations/224769254229552/susana-rosa-remax-valor/" target="_blank" class="hover:text-white transition-colors transform hover:scale-110"><i data-lucide="instagram"></i></a>
+                            <a href="https://www.facebook.com/p/Susana-Rosa-Remax-Valor-100063651276092" target="_blank" class="hover:text-white transition-colors transform hover:scale-110"><i data-lucide="facebook"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <form class="space-y-8 fade-in">
+                <form class="space-y-8 fade-in" action="mailto:susana.rosa@remax.pt" method="post" enctype="text/plain">
                     <div class="group">
-                        <input type="text" placeholder="NOME" class="w-full bg-transparent border-b border-stone-700 py-4 text-lg focus:outline-none focus:border-stone-200 transition-colors placeholder:text-stone-600 font-bold uppercase tracking-wider">
+                        <input type="text" name="nome" placeholder="NOME" required class="w-full bg-transparent border-b border-stone-700 py-4 text-lg focus:outline-none focus:border-stone-200 transition-colors placeholder:text-stone-700 font-bold uppercase tracking-wider text-white">
                     </div>
                     <div class="group">
-                        <input type="email" placeholder="EMAIL" class="w-full bg-transparent border-b border-stone-700 py-4 text-lg focus:outline-none focus:border-stone-200 transition-colors placeholder:text-stone-600 font-bold uppercase tracking-wider">
+                        <input type="email" name="email" placeholder="EMAIL" required class="w-full bg-transparent border-b border-stone-700 py-4 text-lg focus:outline-none focus:border-stone-200 transition-colors placeholder:text-stone-700 font-bold uppercase tracking-wider text-white">
                     </div>
                     <div class="group">
-                        <textarea placeholder="MENSAGEM" rows="2" class="w-full bg-transparent border-b border-stone-700 py-4 text-lg focus:outline-none focus:border-stone-200 transition-colors placeholder:text-stone-600 font-bold uppercase tracking-wider"></textarea>
+                        <textarea name="mensagem" placeholder="MENSAGEM" rows="2" class="w-full bg-transparent border-b border-stone-700 py-4 text-lg focus:outline-none focus:border-stone-200 transition-colors placeholder:text-stone-700 font-bold uppercase tracking-wider text-white"></textarea>
                     </div>
-                    <button type="button" class="mt-8 text-xl font-bold uppercase tracking-widest flex items-center gap-4 hover:gap-6 transition-all">
-                        Enviar <i data-lucide="arrow-right"></i>
+                    <button type="submit" class="mt-8 text-xl font-bold uppercase tracking-widest flex items-center gap-4 hover:gap-6 transition-all text-white">
+                        Enviar Mensagem <i data-lucide="arrow-right"></i>
                     </button>
                 </form>
             </div>
@@ -286,10 +260,7 @@
 
     <footer class="bg-stone-950 text-stone-600 py-8 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs uppercase tracking-[0.2em] border-t border-stone-900">
         <p>© 2025 Susana Rosa. All rights reserved.</p>
-        <div class="flex gap-6 mt-4 md:mt-0">
-            <a href="#" class="hover:text-stone-400">Privacidade</a>
-            <a href="#" class="hover:text-stone-400">Termos</a>
-        </div>
+        <p class="hidden md:block">Remax Collection Valor</p>
     </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -298,109 +269,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script>
-        // 1. Initialize Icons
         lucide.createIcons();
 
-        // 2. Initialize Smooth Scroll (Lenis)
         const lenis = new Lenis({
             duration: 1.2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             direction: 'vertical',
-            gestureDirection: 'vertical',
             smooth: true,
-            mouseMultiplier: 1,
-            smoothTouch: false,
-            touchMultiplier: 2,
         });
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
         requestAnimationFrame(raf);
 
-        // 3. Connect GSAP to Lenis
         gsap.registerPlugin(ScrollTrigger);
 
-        // 4. ANIMATIONS
-
-        // A. Header Entrance
         const tl = gsap.timeline();
-        
-        tl.to(".reveal-nav", {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            stagger: 0.2,
-            ease: "power3.out",
-            delay: 0.2
-        });
+        tl.to(".reveal-nav", { y: 0, opacity: 1, duration: 1, stagger: 0.2, ease: "power3.out", delay: 0.2 });
+        tl.from(".hero-text-anim", { y: "120%", duration: 1.2, stagger: 0.1, ease: "power4.out" }, "-=0.8");
 
-        tl.from(".hero-text-anim", {
-            y: "120%",
-            duration: 1.2,
-            stagger: 0.1,
-            ease: "power4.out"
-        }, "-=0.8");
-
-        // B. Hero Parallax
         gsap.to(".parallax-img", {
             yPercent: 30,
             ease: "none",
-            scrollTrigger: {
-                trigger: "header",
-                start: "top top",
-                end: "bottom top",
-                scrub: true
-            }
+            scrollTrigger: { trigger: "header", start: "top top", end: "bottom top", scrub: true }
         });
 
-        // C. Bento Grid Stagger
         gsap.utils.toArray('.bento-item').forEach((item, i) => {
             gsap.from(item, {
-                y: 50,
-                opacity: 0,
-                duration: 0.8,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: ".grid",
-                    start: "top 80%",
-                    toggleActions: "play none none reverse"
-                },
-                delay: i * 0.1
+                y: 50, opacity: 0, duration: 0.8, ease: "power3.out",
+                scrollTrigger: { trigger: ".grid", start: "top 80%" }, delay: i * 0.1
             });
         });
 
-        // D. Image Reveals (Scale Down effect inside wrapper)
         gsap.utils.toArray('.img-reveal').forEach((img) => {
-            gsap.fromTo(img, 
-                { scale: 1.2 },
-                {
-                    scale: 1,
-                    scrollTrigger: {
-                        trigger: img.parentElement,
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: 1.5
-                    }
-                }
-            );
+            gsap.fromTo(img, { scale: 1.2 }, {
+                scale: 1,
+                scrollTrigger: { trigger: img.parentElement, start: "top bottom", end: "bottom top", scrub: 1.5 }
+            });
         });
 
-        // E. Simple Fade Ups
         gsap.utils.toArray('.fade-in').forEach((el) => {
             gsap.from(el, {
-                y: 30,
-                opacity: 0,
-                duration: 1,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: el,
-                    start: "top 85%"
-                }
+                y: 30, opacity: 0, duration: 1, ease: "power3.out",
+                scrollTrigger: { trigger: el, start: "top 85%" }
             });
         });
-
     </script>
 </body>
 </html>
